@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import WhatIsRotuto from "../../components/WhatIsRotuto/WhatIsRotuto";
-import MeetYourEmployee from "../../components/MeetEmploye/MeetEmployee";
+import FlawlessSupport from "../../components/FlawlessSupport/FlawlessSupport";
 const Home = () => {
   return (
     <>
@@ -32,7 +32,7 @@ const Home = () => {
         <button className="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full lg:mb-12 mb-8">
           <p className="mx-8">Use it for</p>
         </button>
-        <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white mb-4">
+        <ul className="flex flex-col font-medium p-4 max-sm:w-[80%] max-sm:mx-auto md:ml-6 lg:ml-16 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  mb-4">
           <li>
             <NavLink
               to="/"
@@ -89,8 +89,8 @@ const Home = () => {
             </NavLink>
           </li>
         </ul>
+        <FlawlessSupport />
       </div>
-      <MeetYourEmployee />
     </>
   );
 };
