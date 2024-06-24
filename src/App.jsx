@@ -8,6 +8,10 @@ import MeetYourEmployee from "./components/MeetEmploye/MeetEmployee";
 import AboutUs from "./Pages/AboutUs/AboutUS";
 import Pricing from "./Pages/Pricing/pricing";
 import UseCases from "./Pages/UseCases/UseCases";
+import ContactUs from "./Pages/ContactUs/ContactUs";
+import Support from "./Pages/Support/Support";
+import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
+import TermsAndConditions from "./Pages/TermsandConditions/TermsandConditions";
 
 function App() {
   return (
@@ -19,6 +23,10 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/use-cases" element={<UseCases />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-conditions" element={<TermsAndConditions />} />
         </Routes>
         <MeetYourEmployee />
         <Footer />
